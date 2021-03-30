@@ -51,7 +51,7 @@ cron.schedule('*/5 * * * *', () => {
     });
     const page = await browser.newPage();
     await page.goto(
-      'https://registration.wayne.edu/StudentRegistrationSsb/ssb/classRegistration/classRegistration'
+      'https://registration.wayne.edu/StudentRegistrationSsb/ssb/registration/registration'
     );
 
     await page.click('#classSearchLink');
