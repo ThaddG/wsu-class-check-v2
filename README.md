@@ -12,7 +12,7 @@ Using npm:
 npm install
 ```
 
-## Create env file with these values
+## Create an env file in the root directory with these values
 ---
     WS_CHROME_ENDPOINT_URL=''
     CRN=''
