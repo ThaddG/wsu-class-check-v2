@@ -31,10 +31,10 @@ DevTools listening on ws://127.0.0.1:9222/devtools/browser/27c12cd0-5f74-4738-b4
 ```
 
 ## `Windows`
-    ### 1. Right click on your Google Chrome shortcut icon then click Properties
-    ### 2. In Target field, add to the very end `--remote-debugging-port=9222`
-    ### 3. Click “Apply” and re-launch Chrome
-    ### 4. Open a browser to `http://127.0.0.1:9222/json/version`
+    1. Right click on your Google Chrome shortcut icon then click Properties
+    2. In Target field, add to the very end `--remote-debugging-port=9222`
+    3. Click “Apply” and re-launch Chrome
+    4. Open a browser to `http://127.0.0.1:9222/json/version`
     
 #### Copy the ws (include ws) and store it in WS_CHROME_ENDPOINT_URL
 #### Fill out the rest of the env values
