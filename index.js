@@ -65,7 +65,7 @@ const Email = {
     // await page.click('.select2-container');
     // await page.click('.term-combo2');
 
-    await page.keyboard.type('Winter 2021');
+    await page.keyboard.type('Spring/Summer 2021');
     await page.waitForTimeout(2000);
     await page.keyboard.press('Enter');
     await page.waitForTimeout(1000);
