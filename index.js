@@ -72,7 +72,7 @@ const Email = {
     await page.click('#term-go');
 
     await page.waitForSelector('#txt_courseNumber', { visible: true });
-    await page.type('#txt_keywordlike', '26516');
+    await page.type('#txt_keywordlike', process.env.CRN);
     await page.click('#search-go');
 
     await page.waitForSelector('.status-bold', { visible: true });
