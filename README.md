@@ -39,4 +39,9 @@ DevTools listening on ws://127.0.0.1:9222/devtools/browser/27c12cd0-5f74-4738-b4
 #### Copy the ws (include ws) and store it in WS_CHROME_ENDPOINT_URL
 #### Fill out the rest of the env values
 
+## `How to run`
+```
+node index.js
+```
+
 ### `NOTE`: You have to first sign into wsu once and complete the duo 2-factor for this to work. Once you do this you can run the script successfully
