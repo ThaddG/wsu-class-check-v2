@@ -44,7 +44,7 @@ const Email = {
   },
 };
 
-// cron.schedule('*/5 * * * *', () => {
+cron.schedule('*/1 * * * *', () => {
   const test = async function () {
     const browser = await puppeteer.connect({
       browserWSEndpoint: wsChromeEndpointurl,
@@ -73,6 +73,7 @@ const Email = {
 
     await page.waitForSelector('#txt_courseNumber', { visible: true });
     await page.type('#txt_keywordlike', process.env.CRN);
+    await page.waitForTimeout(1000);
     await page.click('#search-go');
 
     await page.waitForSelector('.status-bold', { visible: true });
@@ -138,4 +139,4 @@ const Email = {
   test().then((res) => {
     Email.sendEmail(res);
   });
-// });
+});
